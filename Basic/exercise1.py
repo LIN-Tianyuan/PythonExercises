@@ -17,4 +17,4 @@ et renvoie True s'il s'agit d'une voyelle, False sinon.
 def voyelle(caractere):
     return caractere in 'a,e,i,o,u,y,A,E,I,O,U,Y'
 
-print(voyelle('K'))
+print(voyelle('c'))
