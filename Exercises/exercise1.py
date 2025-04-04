@@ -14,7 +14,3 @@ et renvoie True s'il s'agit d'une voyelle, False sinon.
 (长度为 1 的字符串），如果是元音则返回 True，否则返回 False。
 如果是元音则返回 True，否则返回 False。
 """
-def voyelle(caractere):
-    return caractere in 'a,e,i,o,u,y,A,E,I,O,U,Y'
-
-print(voyelle('K'))
