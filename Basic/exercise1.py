@@ -15,8 +15,8 @@ et renvoie True s'il s'agit d'une voyelle, False sinon.
 如果是元音则返回 True，否则返回 False。
 """
 
-def voyelle(caractere):
-    voyelles = 'aeiouyAEIOUY'
-    return caractere in voyelles
+def letter(caractere):
+    voyelle = 'aeiouyAEIOUY'
+    return caractere in voyelle 
 
-print(voyelle("b"))
+print(letter("b"))
