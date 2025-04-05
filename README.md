@@ -16,8 +16,8 @@ cd python-exercises
 ```
 ## 3. Create your own homework directory
 ```bash
-mkdir -p submissions/student_zhangsan/week_1
-cp exercises/week_1/exercise_1.py submissions/student_zhangsan/week_1/
+mkdir -p submissions/student_zhangsan/exercise1.py
+cp exercises/week_1/exercise_1.py submissions/student_zhangsan/exercise1/
 # Then finish the exercises.
 ```
 ## 4. Submit and push
@@ -56,7 +56,7 @@ upstream  https://github.com/LIN-Tianyuan/python-exercises.git
 ### 6.2 Update your repository each time your teacher posts a new assignment
 ```bash
 git fetch upstream
-git merge upstream/main
+git merge upstream/master
 git push origin main
 ```
 fetch upstream: get the latest update from your teacher
