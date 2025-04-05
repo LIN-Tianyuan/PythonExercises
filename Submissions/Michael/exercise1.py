@@ -14,3 +14,8 @@ et renvoie True s'il s'agit d'une voyelle, False sinon.
 (长度为 1 的字符串），如果是元音则返回 True，否则返回 False。
 如果是元音则返回 True，否则返回 False。
 """
+
+def caractere(a):
+    return a in "a,e,i,o,u,y"
+print(caractere("a"))
+print(caractere("c"))
