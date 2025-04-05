@@ -17,6 +17,7 @@ et renvoie True s'il s'agit d'une voyelle, False sinon.
 
 def letter(caractere):
     voyelle = 'aeiouyAEIOUY'
-    return caractere in voyelle 
+    return caractere in voyelle
 
 print(letter("b"))
+
