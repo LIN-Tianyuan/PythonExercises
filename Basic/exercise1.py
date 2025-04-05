@@ -19,4 +19,4 @@ def voyelle(caractere):
     voyelles = 'aeiouyAEIOUY'
     return caractere in voyelles
 
-print(voyelle("a"))
+print(voyelle("b"))
