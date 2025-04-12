@@ -33,5 +33,6 @@ def multiply(number):
         m = m * number[i]
         i = i + 1
     return m
+
 print(sum([1, 2, 3, 4]))
 print(multiply([1, 2, 3, 4]))
