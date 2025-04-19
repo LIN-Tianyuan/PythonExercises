@@ -18,17 +18,21 @@ et multiply([1, 2, 3, 4]) doit renvoyer 24.
 例如，sum([1, 2, 3, 4])应返回 10，
 multiply([1, 2, 3, 4])应返回 24。
 """
+def sum(number):
+    i = 0
+    s = 0
+    while i < len(number):
+        s = s + number[i]
+        i = i + 1
+    return s
 
-def my_sum(numbers):
-    return sum(numbers)
+def multiply(number):
+    i = 0
+    m = 1
+    while i < len(number):
+        m = m * number[i]
+        i = i + 1
+    return m
 
-def multiply(numbers):
-    result = 1
-    for number in numbers:
-        result *= number
-    return result
-
-# Test code
-if __name__ == "__main__":
-    print(my_sum([1, 2, 3, 4]))
-    print(multiply([1, 2, 3, 4]))
+print(sum([1, 2, 3, 4]))
+print(multiply([1, 2, 3, 4]))
