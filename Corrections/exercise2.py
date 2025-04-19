@@ -28,7 +28,7 @@ def multiply(numbers):
         result *= number
     return result
 
-# 测试代码
+# Test code
 if __name__ == "__main__":
     print(my_sum([1, 2, 3, 4]))
     print(multiply([1, 2, 3, 4]))
