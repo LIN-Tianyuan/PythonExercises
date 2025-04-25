@@ -13,5 +13,4 @@ def translate(word):
         else:
             print(letters, end= '')
 
-
 translate('this is fun')
