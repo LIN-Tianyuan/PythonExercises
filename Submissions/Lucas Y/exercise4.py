@@ -1,12 +1,23 @@
+"""
 def translate(word):
     a = ''
-    # letter = 'o'
-    for consonant in word:
-        if consonant in 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXZ':
-            a = a + consonant + 'o' + consonant  # 'o' = letter
+    for letter in word:
+        if letter in 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXZ':
+            a = a + letter + 'o' + letter
         else:
-            a = a + consonant
+            a = a + letter
     return a
 
+print(translate('this is fun'))
+"""
+def translate(word):
+    a = ''
+    consonant = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXZ'
+    for letter in word:
+        if letter in consonant:
+            a = a + letter + 'o' + letter
+        else:
+            a = a + letter
+    return a
 
 print(translate('this is fun'))
