@@ -57,7 +57,7 @@ upstream  https://github.com/LIN-Tianyuan/python-exercises.git
 ```bash
 git fetch upstream
 git merge upstream/master
-git push origin main
+git push origin master
 ```
 fetch upstream: get the latest update from your teacher
 
