@@ -9,4 +9,3 @@ def caractere(a):
     return a in "aeiouy"
 print(caractere("a"))
 print(caractere("c"))
-

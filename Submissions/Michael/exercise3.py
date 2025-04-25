@@ -5,11 +5,11 @@ et renvoie la longueur du mot le plus long.
 """
 
 def find_longest_word(lista):
-    o = 0
+    max_number = 0
     for element in lista:
         h = len(element)
-        if h > o:
-            o = h
-    print(o)
+        if h > max_number:
+            max_number = h
+    return max_number
 
 find_longest_word(["hello","bonjour","Python"])
