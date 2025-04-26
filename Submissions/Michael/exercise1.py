@@ -10,4 +10,3 @@ def caractere(a):
 
 print(caractere("a"))
 print(caractere("c"))
-
