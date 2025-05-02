@@ -14,20 +14,16 @@ Par exemple, translate(« this is fun ») devrait renvoyer la chaîne « tothohi
 也就是说，将每个辅音加倍，并在中间添加一个 “o”。
 例如，translate(“this is fun”)将返回字符串 “tothohisos isos fofunon”。
 """
-def translate(messages):
-    c = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
-    for i in messages:
-        if i == "t":
-           print( i  + "o", end='')
-        if i == "h":
-            print(i +"o", end='')
-        if i == 's':
-            print(i + "o", end='')
-        if i == 'n':
-            print( i  + "o", end='')
-        if i =='f':
-            print( i + "of", end='')
-        else:
-            print(i, end='')
+def translate(text):
+    result = ""
+    vowels = "aeiouAEIOU"
 
-translate("this is fun")
+    for char in text:
+        if char.isalpha() and char not in vowels:
+            result += char + "o" + char
+        else:
+            result += char
+    return result
+
+if __name__ == "__main__":
+    print(translate("this is fun"))  # 输出 "tothohisos isos fofunon"
