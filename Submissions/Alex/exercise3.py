@@ -16,7 +16,9 @@ def find_longest_word(list):
         return 0
     return max(len(list) for list in list)
 
+
 list = ["azerty","bonjour"]
 max = find_longest_word(list)
 print(max)
+
 
