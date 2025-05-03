@@ -10,13 +10,13 @@ un entier n et renvoie la liste des mots qui sont plus longs que n.
 中文：
 编写一个函数 filter_long_words()，接收单词列表和整数 n，并返回长度大于 n 的单词列表。
 """
-list = ["dog", "nappe", "fantome", "pamplemousse"]
+list = ["apple", "poires", "fantome", "pamplemouse"]
+list1 = []
 def filter_long_words(list, n):
     for i in list:
-        if len(i) > n:
-           print(i)
-
-
-
+        if len(i) > n :
+            return list1.append(i)
 
 filter_long_words(list, len(list))
+print(list1)
+
