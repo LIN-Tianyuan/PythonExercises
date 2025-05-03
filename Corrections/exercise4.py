@@ -11,3 +11,4 @@ def translate(text):
 
 if __name__ == "__main__":
     print(translate("this is fun"))  # 输出 "tothohisos isos fofunon"
+
