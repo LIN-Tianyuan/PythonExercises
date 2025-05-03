@@ -15,7 +15,7 @@ list1 = []
 def filter_long_words(list, n):
     for i in list:
         if len(i) > n :
-            return list1.append(i)
+            list1.append(i)
 
 filter_long_words(list, len(list))
 print(list1)
