@@ -12,5 +12,6 @@ def translate(word):
             print(letters + "o" + letters, end="")
         else:
             print(letters, end= '')
+    return 
 
 translate('this is fun')
