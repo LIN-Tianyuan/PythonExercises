@@ -14,3 +14,17 @@ Votre tâche consiste à écrire une fonction qui vérifie si une phrase est un 
 例如 The quick brown fox jumps over the lazy dog.
 您在这里的任务是编写一个函数来检查一个句子是否是构词法。
 """
+def pangramme(text):
+    c = "abcdefghijklmnopqrstuvwxyz"
+    lettres_trouvees = set()
+
+    for i in text.lower():
+        if i in c:
+            lettres_trouvees.add(i)
+
+    if len(lettres_trouvees) == 26:
+        return "Il y a un pangramme dans cette phrase."
+    else:
+        return "Il y a pas un pangramme dans cette phrase."
+
+print(pangramme("The quick brown fox jumps over the lazy dog."))
