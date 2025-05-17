@@ -15,7 +15,7 @@ def filter_long_words(the_n_word, lista):
 
 
 
-a = filter_long_words("beaugosse", ["hello", "bonjour", "Python", "magnifiquement", "inoubliable",
+a = filter_long_words("beaugausse", ["hello", "bonjour", "Python", "magnifiquement", "inoubliable",
                                 "maison", "superman", "ordinateur"])
 
 print(a)
