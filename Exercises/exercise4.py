@@ -14,4 +14,3 @@ Par exemple, translate(« this is fun ») devrait renvoyer la chaîne « tothohi
 也就是说，将每个辅音加倍，并在中间添加一个 “o”。
 例如，translate(“this is fun”)将返回字符串 “tothohisos isos fofunon”。
 """
-
