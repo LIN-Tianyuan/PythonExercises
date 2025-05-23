@@ -19,6 +19,7 @@ def filter_long_words(n, lista):
             empty.append(element)
     return empty
 
+
 a = filter_long_words(9, ["hello", "bonjour", "Python", "magnifiquement", "inoubliable",
                                 "maison", "superman", "ordinateur"])
 print(a)
