@@ -15,3 +15,4 @@ def pangram(sentence):
 
 
 pangram("The quick brown fox jumps over the lazy dog.")
+pangram("J'aime les chien vvvv")
