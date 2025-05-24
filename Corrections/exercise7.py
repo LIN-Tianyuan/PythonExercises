@@ -3,6 +3,8 @@ def is_palindrome(phrase):
     return cleaned == cleaned[::-1]
 
 
+
+
 print(is_palindrome("Go hang a salami I'm a lasagna hog."))  # True
 print(is_palindrome("Was it a rat I saw?"))                  # True
 print(is_palindrome("Hello, world!"))                        # False
