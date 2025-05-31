@@ -48,3 +48,20 @@ Cependant, vous ne devez pas vous attendre à ce que des règles aussi simples f
 请使用 lie、see、move 和 hug 等单词测试您的函数。
 但是，您不能指望这种简单的规则适用于所有情况。
 """
+
+def make_ing_form(verb):
+    if verb in ['be', 'see', 'flee', 'knee']:
+        return verb + 'ing'
+    if verb.endswith('ie'):
+        return verb[:-2] + 'ying'
+    if verb.endswith('e'):
+        return verb[:-1] + 'ing'
+    if (len(verb) >= 3 and verb[-1] not in 'aeiou' and
+        verb[-2] in 'aeiou' and verb[-3] not in 'aeiou'):
+        return verb + verb[-1] + 'ing'
+    return verb + 'ing'
+
+print(make_ing_form('lie'))
+print(make_ing_form('see'))
+print(make_ing_form('move'))
+print(make_ing_form('hug'))
