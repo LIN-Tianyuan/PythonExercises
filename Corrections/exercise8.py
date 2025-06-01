@@ -48,3 +48,26 @@ Cependant, vous ne devez pas vous attendre à ce que des règles aussi simples f
 请使用 lie、see、move 和 hug 等单词测试您的函数。
 但是，您不能指望这种简单的规则适用于所有情况。
 """
+def make_ing_form(verb):
+    vowels = 'aeiou'
+    exceptions = {'be', 'see', 'flee', 'knee'}
+
+    if verb in exceptions:
+        return verb + 'ing'
+    elif verb.endswith('ie'):
+        return verb[:-2] + 'ying'
+    elif verb.endswith('e'):
+        return verb[:-1] + 'ing'
+    elif (len(verb) >= 3 and
+          verb[-1] not in vowels and
+          verb[-2] in vowels and
+          verb[-3] not in vowels):
+        return verb + verb[-1] + 'ing'
+    else:
+        return verb + 'ing'
+
+
+# 测试
+test_verbs = ['lie', 'see', 'move', 'hug', 'die', 'run', 'fix', 'open', 'make']
+for v in test_verbs:
+    print(f"{v} -> {make_ing_form(v)}")
