@@ -3,7 +3,7 @@ def make_ing_form(word):
         word = word[:-2] + 'y'
         new_word = word + 'ing'
 
-    if word[-1:] == 'e':
+    elif word[-1:] == 'e':
         word = word[:-1]
         new_word = word + 'ing'
 
