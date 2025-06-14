@@ -29,7 +29,11 @@ Notez que la ponctuation, les majuscules et les espaces sont généralement igno
 
 def palindromes(words):
     words = words.lower()
-    words = words.replace("", "")
+<<<<<<<<< Temporary merge branch 1:Submissions/Alex/exercise7.py
+    words = words.replace(" ", "")
+=========
+    words = words.replace(" ", " ")
+>>>>>>>>> Temporary merge branch 2:Submissions/Alex/exercise 7.py
     if words == words[::-1]:
         print("True")
     else:
@@ -37,3 +41,4 @@ def palindromes(words):
 
 palindromes("Go hang a salami I'm a lasagna hog")
 palindromes("C'est un rat que j'ai vu")
+palindromes("Step on no pets")
