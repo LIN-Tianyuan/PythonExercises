@@ -42,10 +42,25 @@ retourner leurs indices de tableau.
 中文：
 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回它们的数组下标。
 """
+
 def two_sum(nums, target):
     for i in range(len(nums)):
-        for element in range(i + 1, len(nums)):
-            if nums[i] + nums[element] == target:
-                return [i, element ]
+        for j in range(i + 1, len(nums)):
+            if nums[i] + nums[j] == target:
+                return [i, j]
 
-print(two_sum([3, 4, 2], 6))
+"""
+def two_sum(nums, target):
+    hashmap = {}  # 存储: 数值 -> 下标
+    for i, num in enumerate(nums):
+        complement = target - num
+        if complement in hashmap:
+            return [hashmap[complement], i]
+        hashmap[num] = i
+"""
+
+nums = [2, 7, 11, 15]
+target = 9
+print(two_sum(nums, target))  # 输出: [0, 1]
+
+

@@ -43,9 +43,4 @@ retourner leurs indices de tableau.
 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回它们的数组下标。
 """
 def two_sum(nums, target):
-    for i in range(len(nums)):
-        for element in range(i + 1, len(nums)):
-            if nums[i] + nums[element] == target:
-                return [i, element ]
-
-print(two_sum([3, 4, 2], 6))
+    pass
