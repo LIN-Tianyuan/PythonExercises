@@ -32,24 +32,18 @@ Français:
 中文：
 给定整数 x，如果 x 是回文，则返回 true，否则返回 false。
 """
+def palindrome(nums):
+    numbers = "0123456789"
+    nums_list = []
+    for number in nums:
+        if number in numbers:
+            nums_list.append(number)
+    nums_inverse = nums_list[::-1]
+    if nums_list == nums_inverse:
+        print("It's a palindrome.")
+    else:
+        print("It's not a palindrome.")
 
-def is_palindrome(x):
-    return str(x) == str(x)[::-1]
-
-"""
-def is_palindrome(x):
-    if x < 0 or (x % 10 == 0 and x != 0):
-        return False
-
-    reversed_half = 0
-    while x > reversed_half:
-        reversed_half = reversed_half * 10 + x % 10
-        x //= 10
-
-    return x == reversed_half or x == reversed_half // 10
-"""
-
-print(is_palindrome(121))   # True
-print(is_palindrome(-121))  # False
-print(is_palindrome(10))    # False
-
+palindrome("1213121")
+palindrome("121")
+palindrome("12345678900987654321")

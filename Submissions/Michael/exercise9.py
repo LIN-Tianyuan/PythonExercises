@@ -37,12 +37,15 @@ def two_sum(nums, target):
             break
 
 
-while True:
-    num = input("num = ")
-    if num == "stop":
-        break
-    lista.append(int(num))
+# while True:
+#     num = input("num = ")
+#     if num == "stop":
+#         break
+#     lista.append(int(num))
+#
+# target = int(input("target = "))
+# print(lista)
+# two_sum(lista, target)
 
-target = int(input("target = "))
-print(lista)
-two_sum(lista, target)
+lista = [3, 4, 2]
+print(two_sum(lista, 7))

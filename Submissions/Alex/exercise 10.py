@@ -33,23 +33,14 @@ Français:
 给定整数 x，如果 x 是回文，则返回 true，否则返回 false。
 """
 
-def is_palindrome(x):
-    return str(x) == str(x)[::-1]
+def palindromes(x):
+    if x < 0 :
+       print("False")
 
-"""
-def is_palindrome(x):
-    if x < 0 or (x % 10 == 0 and x != 0):
-        return False
+    str_x = str(x)
 
-    reversed_half = 0
-    while x > reversed_half:
-        reversed_half = reversed_half * 10 + x % 10
-        x //= 10
+    return str_x == str_x[::-1]
 
-    return x == reversed_half or x == reversed_half // 10
-"""
-
-print(is_palindrome(121))   # True
-print(is_palindrome(-121))  # False
-print(is_palindrome(10))    # False
+print(palindromes(121))
+print(palindromes(122))
 
