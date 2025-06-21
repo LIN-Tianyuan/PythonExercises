@@ -40,3 +40,4 @@ def palindrome(x):
         print("Ce n'est pas un palindrome")
 
 palindrome("121")
+
