@@ -59,8 +59,8 @@ def two_sum(nums, target):
         hashmap[num] = i
 """
 
-nums = [2, 7, 11, 15]
-target = 9
+nums = [2, 8, 11, 15]
+target = 17
 print(two_sum(nums, target))  # 输出: [0, 1]
 
 
