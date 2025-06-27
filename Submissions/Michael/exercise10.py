@@ -35,9 +35,9 @@ def palindrome(x):
     for number in x:
             lista.append(number)
     if lista == lista[::-1]:
-        print("C'est un palindrome")
+        print("true")
     else:
-        print("Ce n'est pas un palindrome")
+        print("false")
 
 palindrome("121")
 

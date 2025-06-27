@@ -48,3 +48,20 @@ It is guaranteed that s is a valid roman numeral in the range [1, 3999].
 Français:
 Étant donné un chiffre romain, convertissez-le en un nombre entier.
 """
+
+def Roman_numerals(num):
+    roman = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
+    lista = []
+    result = 0
+
+    for element in num:
+        lista.append(element)
+
+    for element in lista:
+        result += roman[element]
+    return result
+
+
+s = "LVIII"
+ok = Roman_numerals(s)
+print(ok)
