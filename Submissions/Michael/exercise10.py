@@ -12,7 +12,7 @@ Example 2:
 
 Input: x = -121
 Output: false
-Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+Explanation: From left to right, it reads -121. From right to left, it becomes 121-. There fore it is not a palindrome.
 Example 3:
 
 Input: x = 10
@@ -28,21 +28,16 @@ Follow up: Could you solve it without converting the integer to a string?
 
 Français:
 Étant donné un entier x, retourner vrai si x est un palindrome, et faux sinon.
-
-中文：
-给定整数 x，如果 x 是回文，则返回 true，否则返回 false。
 """
 
-def palindromes(x):
-    if x < 0 :
-       print("False")
+def palindrome(x):
+    lista = []
+    for number in x:
+            lista.append(number)
+    if lista == lista[::-1]:
+        print("C'est un palindrome")
+    else:
+        print("Ce n'est pas un palindrome")
 
-    str_x = str(x)
-
-
-    return str_x == str_x[::-1]
-
-print(palindromes(121))
-print(palindromes(122))
-
+palindrome("121")
 
