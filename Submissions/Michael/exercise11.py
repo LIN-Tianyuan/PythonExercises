@@ -62,6 +62,6 @@ def Roman_numerals(num):
     return result
 
 
-s = "LVIII"
+s = ""
 ok = Roman_numerals(s)
 print(ok)
