@@ -52,11 +52,12 @@ Français:
 给定一个罗马数字，将其转换为整数。
 """
 
+
 def roman_nums(nums):
     result = 0
     s = 0
+    value = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
     for letter in nums[::-1]:
-        value = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100,'D': 500, 'M': 1000}
         a = value[letter]
         if a < s:
             result -= a
@@ -66,5 +67,5 @@ def roman_nums(nums):
 
     return result
 
-print(roman_nums('XIV'))
 
+print(roman_nums('XV'))
