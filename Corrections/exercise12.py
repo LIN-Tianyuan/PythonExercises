@@ -41,7 +41,6 @@ def longest_common_prefix(strs):
     prefix = strs[0]
     for s in strs[1:]:
         while not s.startswith(prefix):
-            print(s)
             prefix = prefix[:-1]  # 缩短前缀
             if not prefix:
                 return ""
