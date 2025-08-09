@@ -11,6 +11,5 @@ def prefix(strs: list):
     return pre
 
 
-
 print(prefix(["flower", "flow", "flight"]))
 print(prefix(["dog", "racecar", "car"]))
