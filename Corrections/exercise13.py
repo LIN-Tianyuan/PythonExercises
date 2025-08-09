@@ -1,6 +1,5 @@
 """
 Leetcode 20: Valid Parentheses
-English:
 Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
 An input string is valid if:
@@ -48,3 +47,21 @@ Français:
 给定一个只包含字符'(‘、’)'、‘{’、'}‘、’['和']'的字符串 s，判断输入字符串是否有效。
 """
 
+def is_valid(s: str) -> bool:
+    stack = []
+    mapping = {'(': ')', '{': '}', '[': ']'}
+
+    for char in s:
+        if char in mapping:
+            # 如果是左括号，压入它对应的右括号
+            stack.append(mapping[char])
+        else:
+            # 如果是右括号，判断是否匹配栈顶
+            if not stack or stack.pop() != char:
+                return False
+    return not stack
+
+
+if __name__ == '__main__':
+    s = "()"
+    print(is_valid(s))
