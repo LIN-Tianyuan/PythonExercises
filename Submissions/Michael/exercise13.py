@@ -61,3 +61,4 @@ def characters(s):
 
 
 characters("(]")         # False
+
