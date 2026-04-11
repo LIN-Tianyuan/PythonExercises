@@ -18,11 +18,10 @@ et renvoie True s'il s'agit d'une voyelle, False sinon.
 def character(Z):
     vowel = ["a", "e", "y", "u", "i", "o"]
     for letter in vowel:
-        if letter in Z:
+        if letter == Z:
             return True
-        else:
-            return False
+    return False
 
 
 
-print(character("a"))
+print(character("e"))
