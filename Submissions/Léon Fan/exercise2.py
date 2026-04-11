@@ -19,13 +19,17 @@ et multiply([1, 2, 3, 4]) doit renvoyer 24.
 multiply([1, 2, 3, 4])应返回 24。
 """
 
-def sum(a, b, c, d):
-    sum = a + b + c + d
-    return sum
+def sum(b):
+    i = 0
+    for a in b:
+        i += a
+    return i
 
-def multiply(a, b, c, d):
-    multiply = a * b * c * d
-    return multiply
+def multiply(b):
+    i = 1
+    for a in b:
+        i *= a
+    return i
 
-print(sum(1, 2, 3, 4))
-print(multiply(1, 2, 3, 4))
+print(sum([1, 2, 3, 4]))
+print(multiply([1, 2, 3, 4]))
