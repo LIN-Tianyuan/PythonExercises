@@ -14,3 +14,10 @@ et renvoie True s'il s'agit d'une voyelle, False sinon.
 (长度为 1 的字符串），如果是元音则返回 True，否则返回 False。
 如果是元音则返回 True，否则返回 False。
 """
+
+def vowel(str):
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    return str.lower() in vowels
+print(vowel("L"))
+print(vowel("o"))
+print(vowel("O"))
