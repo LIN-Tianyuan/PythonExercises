@@ -13,10 +13,10 @@ et renvoie la longueur du mot le plus long.
 
 list1 = ["Azerty", "Patate", "Anticonstituniellemnt", "boisson"]
 def find_longest_word(i):
-    longuest_word = 0
+    longest_word = 0
     for word in i:
-        if len(word) > longuest_word:
-            longuest_word = len(word)
-    return longuest_word
+        if len(word) > longest_word:
+            longest_word = len(word)
+    return longest_word
 
 print(find_longest_word(list1))
