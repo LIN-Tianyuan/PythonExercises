@@ -70,7 +70,7 @@ slow：表示“当前去重后数组最后一个元素的位置”
 fast：往后扫描数组
 """
 
-def removeDuplicates(nums):
+def remove_duplicates(nums):
     if not nums:
         return 0
 
@@ -86,6 +86,6 @@ def removeDuplicates(nums):
 
 if __name__ == '__main__':
     nums = [0,0,1,1,1,2,2,3,3,4]
-    k = removeDuplicates(nums)
+    k = remove_duplicates(nums)
     print(k)         # 5
     print(nums[:k])  # [0, 1, 2, 3, 4]
