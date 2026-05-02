@@ -9,6 +9,8 @@ def character(a):
         print(True)
     elif a == "u":
         print(True)
+    elif a == "y":
+        print(True)
     else:
         print(False)
 
