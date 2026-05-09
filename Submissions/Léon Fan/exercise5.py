@@ -11,12 +11,11 @@ un entier n et renvoie la liste des mots qui sont plus longs que n.
 编写一个函数 filter_long_words()，接收单词列表和整数 n，并返回长度大于 n 的单词列表。
 """
 
-def filter_long_word(word):
-    n = 9
+def filter_long_word(word, n):
     result = []
     for i in word:
         if len(i) >= n:
             result.append(i)
     return result
 
-print(filter_long_word(["importation", "vélo", "Anticonstitutionnellement", "Métaphore", "requin"]))
+print(filter_long_word(["importation", "vélo", "Anticonstitutionnellement", "Métaphore", "requin"], 9))
