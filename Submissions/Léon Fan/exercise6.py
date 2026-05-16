@@ -16,14 +16,14 @@ Votre tâche consiste à écrire une fonction qui vérifie si une phrase est un 
 """
 
 def pangram(i):
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
-    f = 0
-    for word in alphabet:
-        if word in i:
-            f += 1
-    if f == 26:
+    alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    for letter in i:
+        if letter in alphabet:
+            alphabet.remove(letter)
+    if len(alphabet) == 0:
         return True
     else:
         return False
+
 
 print(pangram("The quick brown fox jumps over the lazy dog."))
