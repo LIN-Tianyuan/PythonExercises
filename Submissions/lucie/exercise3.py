@@ -20,5 +20,5 @@ def find_longest_word(words):
             longest = len(word)
     return longest
 word = ["CAca", "popi", "ziz","cacasjghazhdsg","🍧"]
-print(len(word))
+print(find_longest_word)
 
