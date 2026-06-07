@@ -66,7 +66,7 @@ def make_ing_form(a):
         return a[-3:] + a[-1] + "ing"
 
     if a[-1] == "e":
-        return a[-1:] + "ing"
+        return a[:-1] + "ing"
 
     return a +"ing"
 
