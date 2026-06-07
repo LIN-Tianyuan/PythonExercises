@@ -26,3 +26,23 @@ Notez que la ponctuation, les majuscules et les espaces sont généralement igno
 或感叹词 “该死的，我疯了！”。
 请注意，标点符号、大小写和间距通常会被忽略。
 """
+
+def palindrome(phrase):
+    ch=phrase.lower().replace(' ','')
+    ch1=""
+    ch2=""
+    for i in ch :
+        if i.isalpha():
+            ch1+=i
+    for j in ch[::-1]:
+        if j.isalpha():
+            ch2+=j
+    print(ch1)
+    print(ch2)
+    return ch1==ch2
+
+print(palindrome(" Go hang a salami I'm a lasagna hog "))
+print(palindrome(" C'est un rat que j'ai vu ?"))
+print(palindrome("Ne marchez pas sur les animaux"))
+print(palindrome("Assieds-toi sur une casserole, Otis"))
+print(palindrome("Go hang a salami I'm a lasagna hog."))
