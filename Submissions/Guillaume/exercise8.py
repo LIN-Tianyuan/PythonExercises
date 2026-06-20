@@ -14,12 +14,15 @@ def make_ing_form(word):
         word = word[:-2] + 'y'
         new_word = word + 'ing'
 
-    elif word[-2:] == 'ee' or word == 'be':
-        new_word = word + 'ing'
 
     elif word[-1:] == 'e':
-        word = word[:-1]
-        new_word = word + 'ing'
+
+        if word == 'be' or word[-2:] == 'ee':
+            new_word = word + 'ing'
+
+        else:
+            word = word[:-1]
+            new_word = word + 'ing'
 
     elif len(word) == 3:
         new_word = word + word[-1] + 'ing'
@@ -29,7 +32,9 @@ def make_ing_form(word):
 
     return new_word
 
+
 print(make_ing_form('lie'))
 print(make_ing_form('see'))
+print(make_ing_form('be'))
 print(make_ing_form('move'))
 print(make_ing_form('run'))
