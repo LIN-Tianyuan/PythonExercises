@@ -14,6 +14,9 @@ def make_ing_form(word):
         word = word[:-2] + 'y'
         new_word = word + 'ing'
 
+    elif word[-2:] == 'ee' or word == 'be':
+        new_word = word + 'ing'
+
     elif word[-1:] == 'e':
         word = word[:-1]
         new_word = word + 'ing'
