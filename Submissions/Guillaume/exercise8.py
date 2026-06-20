@@ -9,6 +9,7 @@ Pour les mots composés d'une consonne-voyelle-consonne, doubler la lettre final
 
 Par défaut, il suffit d'ajouter ing"""
 
+
 def make_ing_form(word):
     if word[-2:] == 'ie':
         word = word[:-2] + 'y'
@@ -17,7 +18,10 @@ def make_ing_form(word):
 
     elif word[-1:] == 'e':
 
-        if word == 'be' or word[-2:] == 'ee':
+        exceptions = ['be', 'see', 'flee', 'knee']
+
+
+        if word in exceptions:
             new_word = word + 'ing'
 
         else:
@@ -33,8 +37,11 @@ def make_ing_form(word):
     return new_word
 
 
-print(make_ing_form('lie'))
-print(make_ing_form('see'))
+
 print(make_ing_form('be'))
+print(make_ing_form('see'))
+print(make_ing_form('flee'))
+print(make_ing_form('knee'))
 print(make_ing_form('move'))
+print(make_ing_form('lie'))
 print(make_ing_form('run'))
