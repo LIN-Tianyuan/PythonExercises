@@ -48,7 +48,7 @@ Français:
 """
 
 """
-力扣Solution
+Leetcode Solution
 
 class Solution:
     def isSymmetric(self, root):
