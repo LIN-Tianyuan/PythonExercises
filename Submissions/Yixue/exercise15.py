@@ -56,12 +56,20 @@ L'ordre relatif des éléments doit être conservé.
 中文：
 给定一个按非递减顺序排序的整数数组 nums，请就地移除重复项，使得每个唯一的元素只出现一次。元素的相对顺序应保持不变。
 """
-def removeDuplicates(nums):
+"""def removeDuplicates(nums):
     res=list(set(nums))
     nums[:]=res
     return len(nums)
 print(removeDuplicates([1,1,2]))
 print(removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
+"""
+def removeDuplicates(nums):
+    indic1st=0
+    for i in range (1,len(nums)):
+        if nums[indic1st]!=nums[i]:
+            indic1st+=1
+            nums[indic1st]=nums[i]
+    return indic1st+1
 
 if __name__ == '__main__':
     nums = [0,0,1,1,1,2,2,3,3,4]
@@ -69,7 +77,9 @@ if __name__ == '__main__':
     k = removeDuplicates(nums)
     k1=removeDuplicates(nums1)
     print(k)
-    print(k1)
+    print(nums)
     print(nums[:k])
+    print(k1)
+    print(nums1)
     print(nums1[:k1])
 
